@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66716F6F"
+    tools:context=".StaffAveRating">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="342dp"
+        android:layout_height="171dp"
+        android:background="#9EF4EFEF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#EFEAEA"
+            android:text="STAFF RATING STATS:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EnterStaffID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Staff ID here..."
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/avRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Average Rating: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nonrated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nr of non-rated orders:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total nr of orders:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/testing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
