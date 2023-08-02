@@ -46,4 +46,10 @@ Implements secure login and registration processes for both staff and customers.
 Restaurant Design: 
 Provides an interface with multiple restaurant options and a shopping cart for customers.
 
+Project Collaboration and Contributors:
+Mpho Makhafola
+Puseletso Nakana
+Monde 
+Thokozani Tase
+
 The Online Food Ordering System resolves customer problems, provides easy order tracking, and improves restaurant efficiency.
