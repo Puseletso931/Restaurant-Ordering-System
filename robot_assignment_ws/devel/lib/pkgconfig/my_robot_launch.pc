@@ -1,0 +1,8 @@
+prefix=/home/puseletso/ros_home/robot_assignment_ws/devel
+
+Name: my_robot_launch
+Description: Description of my_robot_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

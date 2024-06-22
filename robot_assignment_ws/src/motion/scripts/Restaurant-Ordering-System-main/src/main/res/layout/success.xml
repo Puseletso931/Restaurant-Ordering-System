@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".success"
+    android:background="@drawable/backgroundimagejpg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back_pressed"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:src="@drawable/general_back_icon" />
+
+            <ImageView
+                android:id="@+id/shopping"
+                android:layout_width="61dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-14dp"
+                android:padding="15dp"
+                android:src="@drawable/shopping" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:shadowColor="#DDD5D5"
+            android:text="RESTAURANT CATEGORY"
+            android:textAllCaps="true"
+            android:textColor="#0B0A0A"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <RelativeLayout
+            android:layout_width="481dp"
+            android:layout_height="299dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/food1">
+
+
+            <TextView
+                android:id="@+id/mcd"
+                android:layout_width="350dp"
+                android:layout_height="336dp"
+                android:layout_marginTop="-60dp"
+                android:padding="25dp"
+                android:text="                         Mc      McDonald's "
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="498dp"
+            android:layout_height="279dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/food2">
+
+
+            <TextView
+                android:id="@+id/KFC"
+                android:layout_width="308dp"
+                android:layout_height="162dp"
+                android:layout_marginTop="-60dp"
+                android:padding="25dp"
+                android:text="                         Mc      KFC"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="498dp"
+            android:layout_height="362dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/food3">
+
+
+            <TextView
+                android:id="@+id/pana"
+                android:layout_width="308dp"
+                android:layout_height="162dp"
+                android:layout_marginTop="-60dp"
+                android:padding="25dp"
+                android:text="                         Mc      Panarottis"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="498dp"
+            android:layout_height="362dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/food4">
+
+
+            <TextView
+                android:id="@+id/VILLA"
+                android:layout_width="308dp"
+                android:layout_height="162dp"
+                android:layout_marginTop="-60dp"
+                android:padding="25dp"
+                android:text="                         Mc      Villa Bianca"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="498dp"
+            android:layout_height="362dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/food7">
+
+
+            <TextView
+                android:id="@+id/STEERS"
+                android:layout_width="308dp"
+                android:layout_height="162dp"
+                android:layout_marginTop="-60dp"
+                android:padding="25dp"
+                android:text="                         Mc      STEERS"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

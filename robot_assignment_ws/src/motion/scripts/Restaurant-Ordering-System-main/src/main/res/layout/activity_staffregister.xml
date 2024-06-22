@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimagejpg"
+    tools:context=".STAFFREGISTER">
+
+    <EditText
+        android:id="@+id/stafflastname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Last Name"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/stafffirsname"
+        android:layout_width="409dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter First Name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintEnd_toEndOf="@+id/stafflastname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/stafflastname"
+        app:layout_constraintTop_toBottomOf="@+id/stafflastname" />
+
+    <EditText
+        android:id="@+id/staffEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintEnd_toEndOf="@+id/stafffirsname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/stafffirsname"
+        app:layout_constraintTop_toBottomOf="@+id/stafffirsname" />
+
+    <EditText
+        android:id="@+id/verifypassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintBottom_toTopOf="@+id/Restaurant_id"
+        app:layout_constraintEnd_toEndOf="@+id/staffEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/staffEmail"
+        app:layout_constraintTop_toBottomOf="@+id/staffEmail"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
+        android:id="@+id/REGISTER"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/verifypassword"
+        android:layout_marginBottom="148dp"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/verifypassword"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/verifypassword"
+        app:layout_constraintTop_toBottomOf="@+id/Restaurant_id"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <TextView
+        android:id="@+id/stafflogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STAFF REGISTRATION"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/stafflastname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="@+id/staffEmail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Restaurant_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Restaurant ID range(1-5)"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#B5B5B5"
+        app:layout_constraintEnd_toEndOf="@+id/staffEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/staffEmail"
+        app:layout_constraintTop_toBottomOf="@+id/staffEmail" />
+
+    <Button
+        android:id="@+id/stafflog"
+        android:layout_width="218dp"
+        android:layout_height="46dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/REGISTER"
+        app:layout_constraintVertical_bias="0.381"
+            android:onClick="lgnclick"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toTopOf="@+id/stafflog"
+        app:layout_constraintEnd_toEndOf="@+id/stafflog"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="@+id/stafflog"
+        app:layout_constraintTop_toBottomOf="@+id/REGISTER"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
