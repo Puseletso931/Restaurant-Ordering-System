@@ -15,86 +15,73 @@ To ensure a clean environment, it is recommended to create a new Conda environme
 
 ```bash
 conda create -n reproducibility_env python=3.8
-Step 2: Activate the Environment
+```
+### Step 2: Activate the Environment
 Activate the environment with:
 
-bash
-Copy code
+```bash
 conda activate reproducibility_env
-Step 3: Install Python Libraries
+```
+### Step 3: Install Python Libraries
 Once the environment is active, install the necessary Python libraries. The primary libraries for this project are from Hugging Face, including huggingface_hub, transformers, and datasets.
 
-bash
-Copy code
+```bash
 pip install huggingface_hub transformers datasets
+```
+
 You can also install other dependencies from the requirements.txt file to ensure all packages are included:
 
-bash
-Copy code
+```bash
 pip install -r requirements.txt
-Step 4: Jupyter Notebook Setup (Optional)
+```
+### Step 4: Jupyter Notebook Setup 
 If you intend to use Jupyter Notebooks, install jupyter within the environment:
 
-bash
-Copy code
+```bash
 pip install jupyter
-Step 5: Launch Jupyter Notebook
+```
+###  Step 5: Launch Jupyter Notebook
 Launch Jupyter Notebook by running:
 
-bash
-Copy code
+```bash
 jupyter notebook
-Data Access
-Step 1: Downloading Data
+```
+## Data Access
+### Step 1: Downloading Data
 Access and download the dataset used in this paper from Hugging Face Dataset Hub. Load the data using the following code:
 
-python
-Copy code
+```bash
 from datasets import load_dataset
 dataset = load_dataset("dataset-name", split="train")
-Step 2: Data Preprocessing
+```
+### Step 2: Data Preprocessing
 Run the provided script to preprocess the data and prepare it for model training:
 
-bash
-Copy code
-python preprocess_data.py --input_dir raw_data --output_dir processed_data
-Code Execution
-Step 1: Train the Model
+## Code Execution
+### Step 1: Train the Model
 To train the model, use the following command:
 
-bash
-Copy code
-python train_model.py --dataset_path processed_data --output_dir results
-Step 2: Evaluate the Model
-Evaluate the trained model using:
-
-bash
-Copy code
-python evaluate_model.py --model_path results/model_name --test_data_path processed_data/test
-GPU Management
-Step 1: Clear GPU Cache
+## GPU Management
+### Step 1: Clear GPU Cache
 To manage GPU memory between training and evaluation sessions, use the following Python command to clear the GPU cache:
 
-python
-Copy code
+
+```bash
 import torch
 torch.cuda.empty_cache()
-Step 2: Monitor GPU Memory Usage
+
+```
+### Step 2: Monitor GPU Memory Usage
 Alternatively, monitor and manage GPU memory usage with nvidia-smi:
 
-bash
-Copy code
+```bash
 # To view current GPU memory usage
 nvidia-smi
 
+
 # To clear GPU memory if needed
+
 sudo fuser -v /dev/nvidia*
+```
 For additional guidance, refer to the Hugging Face Transformers documentation or the code comments within each script.
-
-markdown
-Copy code
-
-### Instructions for Use:
-- Copy the entire text above.
-- Paste it into a text editor or Markdown editor.
-- Save it as `README.md` for proper formatting in Markdown viewers.
+https://huggingface.co/datasets
